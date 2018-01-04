@@ -6,7 +6,7 @@
 <title>微信接口测试</title>
 <script>
 function sendMessage(){
-WeixinJSBridge.on('menu:share:appmessage', function(argv){
+WeixinJSBridge.on('menuitem:share:appmessage', function(argv){
 WeixinJSBridge.invoke('sendAppMessage',{
 
 "appid":"", //appid 设置空就好了。
@@ -21,7 +21,7 @@ WeixinJSBridge.invoke('sendAppMessage',{
 });
 });
 
-WeixinJSBridge.on('menu:share:timeline', function(argv){
+WeixinJSBridge.on('menuitem:share:timeline', function(argv){
 
 WeixinJSBridge.invoke('shareTimeline',{
 

@@ -24,15 +24,15 @@ WeixinJSBridge.invoke('sendAppMessage',{
 WeixinJSBridge.on('menuitem:share:timeline', function(argv){
 
 WeixinJSBridge.invoke('shareTimeline',{
-
-"appid":"", //appid 设置空就好了。
-"img_url":"", //分享时所带的图片路径
-"img_width":"120", //图片宽度
-"img_height":"120", //图片高度
-"link":"http://www.3lian.net", //分享附带链接地址
-"desc":"极客标签--http://www.jb51.net", //分享内容介绍
-"title":"发现 极客标签 - 做最棒的极客知识分享平台"
-}, function(res){/*** 回调函数，最好设置为空 ***/
+    'appid': 'wx1234567890', // 公众号appID
+    'title':'title', // 分享标题
+    'desc':'desc', // 描述
+    'link':'http://www.qq.com', // 点击后连接地址
+    'img_width':550, // 图片宽度
+    'img_height':370, // 图片高度
+    'img_url': 'http://img1.gtimg.com/10/1048/104857/10485731_980x1200_0.jpg' // 分享到朋友圈的缩略图url
+},function(res){
+    //alert(res.err_msg);
 });
 
 });

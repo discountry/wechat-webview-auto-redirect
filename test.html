@@ -45,7 +45,7 @@ function weixinShareTimeline(title,desc,link,imgUrl){
 }
 
 function listenShare() {
- window.WeixinJSBridge.on('menu:share:timeline', function(argv){
+ window.WeixinJSBridge.on('menuItem:share:timeline', function(argv){
  
       window.WeixinJSBridge.invoke('shareTimeline',{
  
